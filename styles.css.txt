@@ -1,0 +1,42 @@
+body {
+font-family: Arial, sans-serif;
+background: #f7f7f7;
+color: #333;
+margin: 0;
+padding: 0;
+}
+
+header {
+background: #333;
+color: white;
+text-align: center;
+padding: 10px 0;
+}
+
+main {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+padding: 20px;
+}
+
+.country {
+margin: 15px;
+border: 1px solid #ddd;
+border-radius: 8px;
+overflow: hidden;
+width: 200px;
+text-align: center;
+background: white;
+}
+
+.country img {
+width: 100%;
+height: 150px;
+object-fit: cover;
+}
+
+.country h3 {
+margin: 10px 0;
+font-size: 18px;
+}
