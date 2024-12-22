@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Explore Asia</title>
+</head>
+<body>
+<header>
+<nav>
+<h1>Explore Asia</h1>
+</nav>
+</header>
+<main>
+<section class="intro">
+<h2>Discover the Wonders of Asia</h2>
+<p>Click on a country below to explore its top attractions.</p>
+</section>
+<section class="countries">
+<div class="country">
+<a href="saudi-arabia.html">
+<img src="images/saudi-arabia.jpg" alt="Saudi Arabia">
+<h3>Saudi Arabia</h3>
+</a>
+</div>
+<div class="country">
+<a href="japan.html">
+<img src="images/japan.jpg" alt="Japan">
+<h3>Japan</h3>
+</a>
+</div>
+<div class="country">
+<a href="india.html">
+<img src="images/india.jpg" alt="India">
+<h3>India</h3>
+</a>
+</div>
+<div class="country">
+<a href="china.html">
+<img src="images/china.jpg" alt="China">
+<h3>China</h3>
+</a>
+</div>
+<div class="country">
+<a href="thailand.html">
+<img src="images/thailand.jpg" alt="Thailand">
+<h3>Thailand</h3>
+</a>
+</div>
+<!-- Add more countries here -->
+</section>
+</main>
+<footer>
+<p>© 2024 Explore Asia | All Rights Reserved</p>
+</footer>
+</body>
+</html>
