@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Scorer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #0078d7;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        .score-board {
+            display: flex;
+            justify-content: space-between;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .score-board div {
+            text-align: center;
+        }
+        .score-board h2 {
+            margin: 0;
+        }
+        .controls {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .controls button {
+            padding: 10px 20px;
+            background-color: #0078d7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .controls button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cricket Scorer</h1>
+        <p>Track your cricket match in real-time!</p>
+    </header>
+    <div class="container">
+        <div class="score-board">
+            <div>
+                <h2>Team A</h2>
+                <p id="teamA-score">0</p>
+            </div>
+            <div>
+                <h2>Overs</h2>
+                <p id="overs">0.0</p>
+            </div>
+            <div>
+                <h2>Team B</h2>
+                <p id="teamB-score">0</p>
+            </div>
+        </div>
+        <div class="controls">
+            <button onclick="updateScore('teamA', 1)">Team A: +1</button>
+            <button onclick="updateScore('teamA', 4)">Team A: +4</button>
+            <button onclick="updateScore('teamA', 6)">Team A: +6</button>
+            <button onclick="updateOvers()">Next Ball</button>
+            <button onclick="updateScore('teamB', 1)">Team B: +1</button>
+            <button onclick="updateScore('teamB', 4)">Team B: +4</button>
+            <button onclick="updateScore('teamB', 6)">Team B: +6</button>
+        </div>
+    </div>
+
+    <script>
+        let teamAScore = 0;
+        let teamBScore = 0;
+        let balls = 0;
+
+        function updateScore(team, runs) {
+            if (team === 'teamA') {
+                teamAScore += runs;
+                document.getElementById('teamA-score').innerText = teamAScore;
+            } else if (team === 'teamB') {
+                teamBScore += runs;
+                document.getElementById('teamB-score').innerText = teamBScore;
+            }
+        }
+
+        function updateOvers() {
+            balls++;
+            const overs = Math.floor(balls / 6) + "." + (balls % 6);
+            document.getElementById('overs').innerText = overs;
+        }
+    </script>
+</body>
+</html>
