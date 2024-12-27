@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Scoring</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cricket Match Scoring</h1>
+    </header>
+    <main>
+        <div id="scoreboard">
+            <h2>Score: <span id="score">0/0</span></h2>
+            <h3>Overs: <span id="overs">0.0</span></h3>
+        </div>
+        <div id="controls">
+            <button onclick="updateScore(1)">1 Run</button>
+            <button onclick="updateScore(4)">4 Runs</button>
+            <button onclick="updateScore(6)">6 Runs</button>
+            <button onclick="wicket()">Wicket</button>
+            <button onclick="resetMatch()">Reset</button>
+        </div>
+    </main>
+    <script src="scoring.js"></script>
+</body>
+</html>
+    
