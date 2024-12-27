@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Setup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Match Setup</h1>
+        <p>Configure your match settings here</p>
+    </header>
+
+    <main>
+        <form>
+            <label for="matchType">Match Type:</label>
+            <select id="matchType" name="matchType">
+                <option value="Test">Test</option>
+                <option value="ODI">ODI</option>
+                <option value="T20">T20</option>
+            </select>
+
+            <label for="overs">Overs:</label>
+            <input type="number" id="overs" name="overs" min="1" max="50">
+
+            <label for="teams">Teams:</label>
+            <input type="text" id="teams" name="teams" placeholder="Enter team names">
+
+            <button type="submit">Start Match</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cricket Scorer. All rights reserved.</p>
+    </footer>
+</body>
+</html>
